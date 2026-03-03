@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+  }
+  
+  --animate-wiggle: wiggle 2s ease-in-out infinite;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-50 text-zinc-900 antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-xl border border-white/40 shadow-2xl;
+}
+
+.control-label {
+  @apply text-[10px] font-bold text-zinc-500 uppercase tracking-[0.15em] mb-2 block;
+}
+
+.custom-slider {
+  @apply w-full h-1.5 bg-zinc-200 rounded-full appearance-none cursor-pointer accent-indigo-600 transition-all hover:bg-zinc-300;
+}
+
+.custom-slider::-webkit-slider-thumb {
+  @apply appearance-none w-4 h-4 rounded-full bg-white border-[3px] border-indigo-600 cursor-pointer shadow-[0_0_0_4px_rgba(79,70,229,0.05)] transition-all hover:scale-125 hover:shadow-[0_0_0_6px_rgba(79,70,229,0.1)] active:scale-95;
+}
+
+.custom-select {
+  @apply block w-full rounded-xl border-zinc-200 bg-white px-4 py-2.5 text-sm font-medium shadow-sm focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 transition-all outline-none border hover:border-zinc-300 cursor-pointer;
+}
+
+.parameter-card {
+  @apply bg-white rounded-2xl p-4 md:p-5 border border-zinc-100 shadow-sm transition-all hover:shadow-xl hover:shadow-zinc-200/50 hover:-translate-y-0.5 hover:border-indigo-100;
+}
+
+.parameter-value {
+  @apply text-xl md:text-2xl font-bold font-display tracking-tight text-zinc-900;
+}
+
+.parameter-unit {
+  @apply text-[10px] font-bold text-zinc-500 uppercase tracking-widest ml-1.5;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
