@@ -45,7 +45,7 @@ Detailed run and deployment steps are documented in [`INSTRUCTIONS.md`](./INSTRU
 
 ## About the author
 
-EKinLab is created by **Gadriel Gargard**, an independent builder focused on educational and scientific open-source work.
+EKinLab is created by **Gadriel Borbor Gargard**, an 3D Biological Simulator Builder focused on educational and scientific open-source work.
 
 If you found this lab helpful in your classes, mentoring, research training, or personal learning journey, please consider supporting continued development.
 
