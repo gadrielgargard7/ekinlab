@@ -1,5 +1,12 @@
 # EKinLab
 
+<div align="center">
+  <img src="img/ekinlab.jpeg" alt="EKinLab Banner" width="45%" style="display: inline; margin-right: 10px;">
+  <img src="img/ekinlab1.jpeg" alt="EKinLab Interface" width="45%" style="display: inline;">
+</div>
+
+---
+
 EKinLab is an interactive enzyme kinetics laboratory built as a single-page React application. It is designed to help students, educators, and self-learners explore core biochemical kinetics concepts in a visual and intuitive way.
 
 The app combines simulation controls, mathematical models, and real-time charts so users can quickly understand how substrate concentration, enzyme concentration, inhibitors, temperature, pH, and pathway behavior influence reaction dynamics.
