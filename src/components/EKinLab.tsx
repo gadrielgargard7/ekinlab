@@ -622,7 +622,7 @@ const EKinLab: React.FC = () => {
 
                 <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start mb-6 md:mb-8 text-center md:text-left">
                   <img 
-                    src="img/author.jpg" 
+                    src="/img/author.jpg" 
                     alt="Gadriel Borbor Gargard" 
                     className="w-28 h-34 md:w-36 md:h-42 rounded-3xl object-cover shadow-2xl shadow-zinc-200 border-4 border-white flex-shrink-0"
                     referrerPolicy="no-referrer"
@@ -674,7 +674,7 @@ const EKinLab: React.FC = () => {
                 >
                   {countdown > 0 ? `Enter the lab in ${countdown}s` : 'Enter the Lab'}
                 </button>
-              </div>
+              </div>jpg
             </motion.div>
           </motion.div>
         )}
